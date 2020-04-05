@@ -1,0 +1,10 @@
+/*Fix for sticky navbar*/
+body{padding-top: 4.5rem;}
+
+#map{width:100%;height:300px;}
+
+#social{text-align:center;font-size:50px;}
+#social a{border-radius:50px;color:#fff;display:inline-block;width:75px;height:75px;}
+#social a.fb{background:#4267B2;}
+#social a.twitter{background:#1da1f2;}
+#social a.linkedin{background:#2867b2;}
