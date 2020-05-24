@@ -17,7 +17,7 @@
   <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		  <a class="navbar-brand" href="#">My Online Store <i class="fas fa-shopping-cart"></i></a>
+		  <a class="navbar-brand" href="index.html">My Online Store</a> <a href="#" data-toggle="modal" data-target="#cartModal"><i class="fas fa-shopping-cart"></i></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -40,93 +40,8 @@
 	
 	<section class="container" id="home">
 		<h2>Our Cool Products</h2>
-		<div class="row pb-2">
-			<div class="col-lg-4 col-sm-12 col-md-6">
-				<div class="card">
-				  <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Product Image">
-				  <div class="card-body">
-					<h5 class="card-title">Item title</h5>
-					<h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					
-				  </div>
-				  <div class="card-footer text-muted">
-						<a href="#" class="btn btn-primary">Add to cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-12 col-md-6">
-				<div class="card">
-				  <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Product Image">
-				  <div class="card-body">
-					<h5 class="card-title">Item title</h5>
-					<h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					
-				  </div>
-				  <div class="card-footer text-muted">
-						<a href="#" class="btn btn-primary">Add to cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-12 col-md-6">
-				<div class="card">
-				  <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Product Image">
-				  <div class="card-body">
-					<h5 class="card-title">Item title</h5>
-					<h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					
-				  </div>
-				  <div class="card-footer text-muted">
-						<a href="#" class="btn btn-primary">Add to cart</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row pb-2">
-			<div class="col-lg-4 col-sm-12 col-md-6">
-				<div class="card">
-				  <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Product Image">
-				  <div class="card-body">
-					<h5 class="card-title">Item title</h5>
-					<h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					
-				  </div>
-				  <div class="card-footer text-muted">
-						<a href="#" class="btn btn-primary">Add to cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-12 col-md-6">
-				<div class="card">
-				  <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Product Image">
-				  <div class="card-body">
-					<h5 class="card-title">Item title</h5>
-					<h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					
-				  </div>
-				  <div class="card-footer text-muted">
-						<a href="#" class="btn btn-primary">Add to cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-12 col-md-6">
-				<div class="card">
-				  <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Product Image">
-				  <div class="card-body">
-					<h5 class="card-title">Item title</h5>
-					<h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					
-				  </div>
-				  <div class="card-footer text-muted">
-						<a href="#" class="btn btn-primary">Add to cart</a>
-					</div>
-				</div>
-			</div>
+		<div class="row pb-2" id="productsContainer">
+			
 		</div>
 	</section>
 	<section class="container" id="aboutUs">
@@ -204,10 +119,31 @@
 		Copyright (c) <a href="https://github.com/erez213">Erez Aton</a> & Rephael Khanokayev
 	</footer>
 	
+	<div class="modal" tabindex="-1" role="dialog" id="cartModal">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Your Cart</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" id="orderBtn" disabled>Place Order</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/f85d415f7f.js" crossorigin="anonymous"></script>
+	
+	<script src="script.js"></script>
   </body>
 </html>
