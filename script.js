@@ -1,3 +1,7 @@
+// Erez Aton - 311530539
+// Rephael Khanokayev - 312064041
+//Semi Reactive Programming
+
 //List of products to easily produce our HTML code
 var products = [
 	{name:"Item 1", price: 10.99, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", image: "https://via.placeholder.com/700x400"},
@@ -88,5 +92,21 @@ $( document ).ready(function() {
 		cart.splice(index,1);
 		
 		renderCart();
+	});
+	
+	//Change cell background color on hover, and restore on out
+	var originalBackgroundColor;
+	$("table td,table th").mouseover(function() {
+		originalBackgroundColor = $(this).css("background-color");
+		$(this).css("background-color","blue");
+	}).mouseout(function() {
+		$(this).css("background-color",originalBackgroundColor);
+	});
+	
+	
+	//Show message when user leave page, and then unregister the event
+	$(document).mouseleave(function () {
+		alert("Goodbye! Hope to see you come back.");
+		$(document).off('mouseleave');
 	});
 });
